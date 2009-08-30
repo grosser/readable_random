@@ -11,3 +11,14 @@ Install
 Usage
 =====
     ReadableRandom.get(5) -> 'aB23r'
+
+TODO
+====
+ - prevent nasty words by not using vovels or a more clever tick...
+
+
+AUTHOR
+======
+[Michael Grosser](http://pragmatig.wordpress.com)  
+grosser.michael@gmail.com  
+Hereby placed under public domain, do what you want, just do not hold me accountable...
