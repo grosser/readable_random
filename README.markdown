@@ -12,6 +12,13 @@ Usage
 =====
     ReadableRandom.get(5) -> 'aB23r'
 
+    # user.rb
+    def generate_token
+      while token.blank? or User.find_by_token(token)
+        self.token = ReadableRandom.get(6)
+      end
+    end
+
 TODO
 ====
  - prevent nasty words by not using vovels or a more clever tick...
