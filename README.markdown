@@ -6,8 +6,8 @@ Readable string for coupon codes or auth tokens, something people can read/write
 
 Install
 =======
+ - As gem: ` sudo gem install readable_random `
  - As Rails plugin: ` script/plugin install git://github.com/grosser/readable_random.git `
- - As gem: ` sudo gem install grosser-readable_random --source http://gems.github.com `
 
 Usage
 =====
