@@ -52,6 +52,9 @@ describe ReadableRandom do
       base64_chars = (['+', '/'] + ('0'..'9').to_a + ('A'..'Z').to_a + ('a'..'z').to_a)
       set(:base64, 5).map{|x| x.split('')}.flatten.uniq.sort.should == base64_chars
     end
+  end
 
+  it "has a VERSION" do
+    ReadableRandom::VERSION.should =~ /^\d+\.\d+\.\d+$/
   end
 end

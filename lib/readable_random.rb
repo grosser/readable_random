@@ -2,6 +2,7 @@ require 'openssl'
 require "base64"
 
 class ReadableRandom
+  VERSION = File.read( File.join(File.dirname(__FILE__),'..','VERSION') ).strip
   NON_READABLE = %w[o O 0 1 l / = +]
 
   def self.get(size)
