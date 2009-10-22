@@ -2,6 +2,7 @@ Readable string for coupon codes or auth tokens, something people can read/write
 
  - more information density than hex -> shorter codes
  - less confusion than base64 -> readable codes
+ - less 'stupid' then ActiveSupport::SecureRandom, e.g. hex(5).size == 5, not 10
 
 Install
 =======
@@ -18,6 +19,9 @@ Usage
         self.token = ReadableRandom.get(6)
       end
     end
+
+    ReadableRandom.hex(5) -> '12af4'
+    ReadableRandom.base64(5) -> 'at12k'
 
 TODO
 ====
